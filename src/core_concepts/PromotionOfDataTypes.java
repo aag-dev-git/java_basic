@@ -1,6 +1,6 @@
 package core_concepts;
 
-public class Promote {
+public class PromotionOfDataTypes {
 
 	/*
 	 * In the first subexpression, f * b, b is promoted to a float and the result of
