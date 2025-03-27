@@ -1,4 +1,4 @@
-package Constructor;
+package constructor;
 /*
  * A constructor in Java is a special method used to initialize objects when they are created.
  *  Constructors are designed to set initial values for object attributes and prepare the object for use. They are invoked automatically when an instance of a class is created using the new keyword
