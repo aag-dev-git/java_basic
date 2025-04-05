@@ -13,6 +13,7 @@ class Demo {
 	String str;
 
 	// if we pass variables name same as declared then need to use this
+	// This resolves ambiguity when variable names are the same.
 	public Demo(int a, String str) {
 		this.a = a;
 		this.str = str;

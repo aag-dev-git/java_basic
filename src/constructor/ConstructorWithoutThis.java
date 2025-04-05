@@ -4,6 +4,9 @@ class Student001 {
 	String name;
 	int id;
 
+	// Since the parameter names (n, i) are different from the instance variables
+	// (name, id), there's no ambiguity. So, this.name or this.id isn't required.
+	
 	// if we pass var name diff then no need to use this
 	Student001(String n, int i) {
 		name = n;
