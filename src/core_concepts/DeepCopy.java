@@ -19,13 +19,20 @@ public class DeepCopy {
 	 */
 	public static void main(String[] args) {
 
+		ArrayList<Integer> arrayList = new ArrayList<Integer>(List.of(1, 2, 3));
+
 		TestDeeepCopy testDeeepCopy = new TestDeeepCopy();
 		testDeeepCopy.setName("TestList");
 		testDeeepCopy.setList(List.of(1, 2, 3));
 
+		// Set Mutable ArrayList
+//		testDeeepCopy.setList(arrayList);
+
 		System.out.println(testDeeepCopy);
 
+		// Changed values but it does not mean it reflects in other obj
 		TestDeeepCopy testDeeepCopy_1 = (TestDeeepCopy) testDeeepCopy.clone();
+		testDeeepCopy_1.setName("Changed TestList");
 		testDeeepCopy_1.getList().remove(0);
 
 		System.out.println(testDeeepCopy_1);
@@ -67,10 +74,14 @@ class TestDeeepCopy implements Cloneable {
 	@Override
 	public Object clone() {
 
+		// When We pass immutable List.of(1, 2, 3)
 		List<Integer> listNew = new ArrayList<Integer>();
 		listNew.addAll(this.getList());
 
 		return new TestDeeepCopy(listNew, this.getName());
+
+		// When you pass mutable list obj
+//		return new TestDeeepCopy(this.getList(), this.getName());
 
 	}
 
