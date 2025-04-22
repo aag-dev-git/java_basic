@@ -1,4 +1,4 @@
-package oops_inheritance;//every class has a its child class
+package oops.inheritance;//every class has a its child class
 
 class grandFather {
 	void bikeName() {

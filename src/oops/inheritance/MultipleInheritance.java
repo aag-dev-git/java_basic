@@ -1,4 +1,4 @@
-package oops_inheritance;//error occurs
+package oops.inheritance;//error occurs
 
 class Parent1 {
 	void p1() {

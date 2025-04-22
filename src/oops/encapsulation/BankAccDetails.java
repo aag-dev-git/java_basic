@@ -1,4 +1,4 @@
-package oops_encapsulation;
+package oops.encapsulation;
 
 public class BankAccDetails {
 	private String name;

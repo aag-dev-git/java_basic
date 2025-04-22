@@ -1,4 +1,4 @@
-package oops_polymorphism;
+package oops.polymorphism;
 
 public class MethodOverLoadSameParams {
 

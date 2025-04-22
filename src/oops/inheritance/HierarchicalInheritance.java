@@ -1,4 +1,4 @@
-package oops_inheritance;
+package oops.inheritance;
 
 class father {
 	void bike() {

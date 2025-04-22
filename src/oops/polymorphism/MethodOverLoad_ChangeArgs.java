@@ -1,4 +1,4 @@
-package oops_polymorphism;
+package oops.polymorphism;
 
 class Adder {
 	public int add(int a, int b) {
