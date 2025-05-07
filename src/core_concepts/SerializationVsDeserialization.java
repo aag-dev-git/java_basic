@@ -7,7 +7,7 @@ public class SerializationVsDeserialization {
 
 	public static void main(String[] args) {
 		// Creating a Truck object to be serialized
-		Truck truck = new Truck("Amol", 5899L, "A/P: Gaikwadi");
+		Truck truck = new Truck("Raj", 5899L, "A/P: Pune");
 
 		// --- Serialization ---
 		// Serialization is the process of converting an object into a byte stream
@@ -38,7 +38,7 @@ public class SerializationVsDeserialization {
 			// Reading the object back from the file
 			Truck deserializedTruck = (Truck) in.readObject();
 			System.out.println("Deserialized Truck: " + deserializedTruck);
-			
+
 		} catch (IOException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -54,13 +54,13 @@ class Truck implements Serializable {
 
 	private String ownerName;
 	private Long number;
-	private String adress; // Note: Typo ("adress" instead of "address")—could affect future code clarity
+	private String address;
 
 	// Constructor
-	public Truck(String ownerName, Long number, String adress) {
+	public Truck(String ownerName, Long number, String address) {
 		this.ownerName = ownerName;
 		this.number = number;
-		this.adress = adress;
+		this.address = address;
 	}
 
 	// Getters and setters
@@ -80,17 +80,17 @@ class Truck implements Serializable {
 		this.number = number;
 	}
 
-	public String getAdress() {
-		return adress;
+	public String getAddress() {
+		return address;
 	}
 
-	public void setAdress(String adress) {
-		this.adress = adress;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
 	// Override toString for display
 	@Override
 	public String toString() {
-		return "Truck [ownerName=" + ownerName + ", number=" + number + ", adress=" + adress + "]";
+		return "Truck [ownerName=" + ownerName + ", number=" + number + ", address=" + address + "]";
 	}
 }
