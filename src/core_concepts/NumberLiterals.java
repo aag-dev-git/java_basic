@@ -8,7 +8,7 @@ public class NumberLiterals {
 	 */
 	public static void main(String[] args) {
 
-//	int x = 123_456_789;
+		// int x = 123_456_789;
 		int x = 0b1101_0101_0001_1010;
 		System.out.println(x);
 

@@ -29,12 +29,13 @@ public class Main_Method {
 	// can pass var-args instead of [] args
 
 	static public void main(String... xyz) {
+		System.out.println("In main method");
 		main(10);
 	}
 
 	// overloaded main method
 	public static void main(int a) {
-		System.out.println("Overloded main method  " + a);
+		System.out.println("In Overloded main method  " + a);
 	}
 
 	public void main(String str) {

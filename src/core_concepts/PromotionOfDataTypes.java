@@ -21,7 +21,7 @@ public class PromotionOfDataTypes {
 		double d = .1234;
 
 		double result = (f * b) + (i / c) - (d * 8);
-		System.out.println((f * b) + "+" + (i) + "-" + (d * 8));
+		System.out.println((f * b) + " + " + (i) + " - " + (d * 8));
 		System.out.println("result = " + result);
 		System.out.println("(i / c) = " + (i / c));
 

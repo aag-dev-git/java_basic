@@ -1,16 +1,17 @@
 package constructor;
 /*
- * A constructor in Java is a special method used to initialize objects when they are created.
- *  Constructors are designed to set initial values for object attributes and prepare the object for use. They are invoked automatically when an instance of a class is created using the new keyword
+ *	A constructor in Java is a special method used to initialize objects when they are created.
+ *  Constructors are designed to set initial values for object attributes and prepare the object for use.
+ *  They are invoked automatically when an instance of a class is created using the new keyword
  * */
 
-/*A java copy constructor returns a copy of the specified object by 
+/* A java copy constructor returns a copy of the specified object by 
  * taking the existing object as an argument.;
  * To create a copy constructor, we need to take the existing object 
  * as an argument and initialize the values of instance variables with
  * the values obtained in the object.;
  * One of the most important advantages of using a copy constructor is that 
- * there is no need for any typecasting.
+ * there is no need for any type-casting.
  * Copy constructor in Java allows us to change the fields that are declared as final.
  * Copy constructor provides complete control over object creation. 
  *  */
@@ -53,6 +54,6 @@ public class ConstructorTypes {
 		ConstructorTypes student_copy = new ConstructorTypes(student);
 
 		System.out.println("Contents of the copied object");
-		student.displayStudent();
+		student_copy.displayStudent();
 	}
 }
