@@ -10,7 +10,7 @@ public class SingleTon_Class {
 	 * locators, or managing global resources (like a database connection or
 	 * application configuration).
 	 * 
-	 * Example Runtime,service locator , Business development To create singleton
+	 * Example: Runtime,service locator , Business development To create singleton
 	 * class Create a private constructor and Create a static method (by using the
 	 * lazy initialization) that returns the object of the singleton class.
 	 * 

@@ -2,7 +2,7 @@ package features.java_8;
 
 import java.util.Arrays;
 
-public class Array_Parallel_Sort {
+public class ArrayParallelSort {
 	/*
 	 * Java provides a new additional feature in Array class which is used to sort
 	 * array elements parallel.New methods has added to java.util.Arrays package
